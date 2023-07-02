@@ -163,5 +163,3 @@
 // }
 
 // mutation(["hello", "hello"]);
-
-// INSERTION ARRAY
