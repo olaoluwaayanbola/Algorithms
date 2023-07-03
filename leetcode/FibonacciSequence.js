@@ -11,4 +11,3 @@ const fibonacci = (seq) => {
 }
 
 fibonacci(9)
-
