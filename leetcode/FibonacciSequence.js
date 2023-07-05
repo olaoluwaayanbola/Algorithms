@@ -10,4 +10,12 @@ const fibonacci = (seq) => {
     return mainSeq
 }
 
+const fibonacci = (seq) => {
+    if (seq < 2) {
+        return 2
+    }
+    let newVar = fibonacci(seq - 1) + fibonacci(seq - 2)
+
+    return newVar
+}
 fibonacci(9)
