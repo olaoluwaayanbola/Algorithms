@@ -6,10 +6,10 @@ const factorial = (num) => {
     return sum
 }
 
-const factorial = (num) => {
+const factorial2 = (num) => {
     if (num === 0) {
         return 1
     }
-    return num * factorial(num - 1)
+    return num * factorial2(num - 1)
 }
-factorial(3)
+factorial2(3)
