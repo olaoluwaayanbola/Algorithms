@@ -12,3 +12,8 @@ var productExceptSelf = function (nums) {
     console.log(hashmap)
     return sol
 };
+
+// real-sol
+
+
+
