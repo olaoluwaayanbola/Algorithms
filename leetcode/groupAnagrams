@@ -1,0 +1,15 @@
+var groupAnagrams = function (strs) {
+    if (strs.length === 1) {
+        return [strs]
+    }
+    let hash = {}
+    for (let i = 0; i < strs.length; i++) {
+        let newstrs = Array.from(strs[i]).sort().join("")
+        if (newstrs in hash) {
+            hash[newstrs].push(strs[i])
+        } else {
+            hash[newstrs] = [strs[i]]
+        }
+    }
+    return Object.values(hash)
+}
