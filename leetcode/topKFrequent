@@ -1,0 +1,15 @@
+var topKFrequent = function (nums, k) {
+    let hashmap = {}
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] in hashmap) {
+            hashmap[nums[i]]++
+        } else { hashmap[nums[i]] = 0 }
+    }
+
+    let sortedarr = Object.entries(hashmap).sort((a, b) => b[1] - a[1])
+    let holdelement = []
+    for (let i = 0; i < sortedarr.length; i++) {
+        holdelement.push(parseInt(sortedarr[i][0]))
+    }
+    return holdelement.splice(0, k)
+};
