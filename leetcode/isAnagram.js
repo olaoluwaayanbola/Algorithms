@@ -18,7 +18,8 @@ var isAnagram = function (s, t) {
     }
     console.log(sp)
     return true
-}; = function (s, t) {
+}; 
+function (s, t) {
     let obj1 = {}
     if (s.length !== t.length) {
         return false
