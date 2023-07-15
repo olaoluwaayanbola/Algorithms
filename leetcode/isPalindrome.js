@@ -38,3 +38,32 @@ var isPalindrome = function (s) {
     }
     return arr.join("") === rearr.join("")
 };
+
+// best
+var isPalindrome = function (s) {
+    let char = s.toLowerCase();
+    let newarr = char.replace(/[^a-z0-9]/g, "")
+
+    // let arr = [];
+
+    // for (let i = 0; i < char.length; i++) {
+    //     if (/[a-z0-9]/.test(char[i])) {
+    //         arr.push(char[i]);
+    //     }
+    // }
+
+    // let newarr = arr.join("");
+
+    let pointer = 0;
+    let pointer2 = newarr.length - 1;
+
+    while (pointer < pointer2) {
+        if (newarr[pointer] !== newarr[pointer2]) {
+            return false;
+        }
+        pointer++;
+        pointer2--;
+    }
+
+    return true;
+};
