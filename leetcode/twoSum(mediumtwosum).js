@@ -11,3 +11,14 @@ var twoSum = function (numbers, target) {
     }
     return arr.sort((a, b) => a - b)
 };
+
+
+var twoSum = function (numbers, target) {
+    let hashmap = {}
+    pointer1 = 0
+    pointer2 = numbers.length - 1
+    // midpoint = (pointer1 + pointer2) / 2
+    while (numbers[midpoint] > target) {
+
+    }
+};
