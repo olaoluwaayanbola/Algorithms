@@ -16,6 +16,7 @@ var rotate = function (nums, k) {
       end--
     }
   }
+  
   if(k > 0){
     rotator_func(0,size -1)
     rotator_func(0,k-1)
